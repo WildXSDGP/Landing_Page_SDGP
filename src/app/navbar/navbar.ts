@@ -18,11 +18,11 @@ export class Navbar implements OnInit{
     { label: 'About', icon: 'pi-megaphone',items: [
                     {
                         label: 'Team',
-                        url: 'https://angular.io/'
+                        url: 'http://localhost:4200/team'
                     },
                     {
                         label: 'WildX',
-                        url: 'https://vitejs.dev/'
+                        url: 'http://localhost:4200/**'
                     }
                 ] },
     { label: 'Features', icon: 'pi pi-briefcase' },
