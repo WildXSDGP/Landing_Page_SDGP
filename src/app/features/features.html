@@ -1,1 +1,12 @@
-<p>features works!</p>
+
+<div class="features-section">
+  <h2 class="section-title">Key Features</h2>
+
+  <div class="features-grid">
+    <p-card *ngFor="let f of features" class="feature-card">
+      <i class="{{ f.icon }} feature-icon"></i>   <!-- PRIME ICON HERE -->
+      <h3 class="feature-title">{{ f.title }}</h3>
+      <p class="feature-description">{{ f.description }}</p>
+    </p-card>
+  </div>
+</div>
