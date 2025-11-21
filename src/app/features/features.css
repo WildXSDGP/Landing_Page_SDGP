@@ -16,3 +16,13 @@
   font-weight: bold;
   color: #1e293b;
 }
+
+.feature-card {
+  padding: 20px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  transition: 0.3s;
+}
