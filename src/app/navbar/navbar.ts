@@ -15,8 +15,17 @@ export class Navbar implements OnInit{
     
     this.items = [
     { label: 'Home', icon: 'pi pi-home' },
-    { label: 'Animals', icon: 'pi pi-paw' },
-    { label: 'Packages', icon: 'pi pi-briefcase' },
+    { label: 'About', icon: 'pi-megaphone',items: [
+                    {
+                        label: 'Team',
+                        url: 'https://angular.io/'
+                    },
+                    {
+                        label: 'WildX',
+                        url: 'https://vitejs.dev/'
+                    }
+                ] },
+    { label: 'Features', icon: 'pi pi-briefcase' },
     { label: 'Contact', icon: 'pi pi-envelope' }
   ];
 
