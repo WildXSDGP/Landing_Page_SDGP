@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  --slate-300: #cbd5e1;
+  --emerald-600: #059669;
+  --navbar-text: #ffffff;
+}
+
+body {
+  background: var(--slate-300);  /* Default background */
+}
+
+/* Optional: style Menu text */
+.p-menubar .p-menuitem-text {
+  color: var(--navbar-text);
+}
+.p-menubar .pi {
+  color: var(--navbar-text);
+}
+
+
+.landing-container {
+  height: 100vh;
+  background: linear-gradient(to bottom, var(--slate-300), var(--emerald-600));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

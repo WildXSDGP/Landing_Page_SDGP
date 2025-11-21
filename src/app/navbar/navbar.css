@@ -1,0 +1,4 @@
+.navbar {
+  background: linear-gradient(to right, var(--slate-300), var(--emerald-600));
+  padding: 10px;
+}
