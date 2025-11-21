@@ -2,11 +2,20 @@
 <div class="features-section">
   <h2 class="section-title">Key Features</h2>
 
-  <div class="features-grid">
+  <!-- <div class="features-grid">
+    
     <p-card *ngFor="let f of features" class="feature-card">
-      <i class="{{ f.icon }} feature-icon"></i>   <!-- PRIME ICON HERE -->
+      <i class="{{ f.icon }} feature-icon"></i>   
       <h3 class="feature-title">{{ f.title }}</h3>
       <p class="feature-description">{{ f.description }}</p>
     </p-card>
+  </div> -->
+  <div class="features-grid">
+  <div class="feature-card" *ngFor="let feature of features">
+    <i [class]="feature.icon"></i>
+    <h3>{{ feature.name }}</h3>
+    <p>{{ feature.description }}</p>
   </div>
+</div>
+
 </div>

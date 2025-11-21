@@ -1,13 +1,15 @@
+@import "primeicons/primeicons.css";
 .feature-icon {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #059669;  /* Emerald-600 theme color */
+  color: #059669;  
 }
 
 .features-section {
   padding: 60px 20px;
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--surface-ground);
   text-align: center;
+  width: 100%;
 }
 
 .section-title {
@@ -25,11 +27,14 @@
   justify-content: space-between;
   border-radius: 12px;
   transition: 0.3s;
+  background: var(--surface-card);
+  height: 220px; 
+  border: 2px solid var(--surface-border);
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   align-items: stretch;
 }
@@ -40,12 +45,12 @@
 }
 
 
-/* ICON */
+
 .icon {
   font-size: 3rem;
 }
 
-/* TEXTS */
+
 .feature-title {
   font-size: 1.3rem;
   font-weight: bold;
@@ -55,3 +60,35 @@
 .feature-description {
   color: #334155;
 }
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);  /* 2 cards for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .features-grid {
+    grid-template-columns: 1fr;  /* 1 card for mobile */
+  }
+}
+
+/* .features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.feature-card {
+  background: var(--surface-card);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow-2);
+}
+
+.feature-card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+} */

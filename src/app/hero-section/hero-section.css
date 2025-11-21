@@ -2,7 +2,7 @@
   min-height: 100vh;
   text-align: center;
   padding: 40px;
-  background: linear-gradient(to bottom, var(--slate-300), var(--emerald-600));
+  background: var(--surface-ground);
 }
 
 .hero-title {
