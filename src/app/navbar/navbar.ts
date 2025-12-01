@@ -14,19 +14,19 @@ export class Navbar implements OnInit{
   ngOnInit(): void {
     
     this.items = [
-    { label: 'Home', icon: 'pi pi-home' },
+    { label: 'Home', icon: 'pi pi-home',routerLink:['/'] },
     { label: 'About', icon: 'pi-megaphone',items: [
                     {
                         label: 'Team',
-                        url: 'http://localhost:4200/team'
+                       routerLink:['/about/team']
                     },
                     {
                         label: 'WildX',
-                        url: 'http://localhost:4200/**'
+                        routerLink:['/about/wildx']
                     }
                 ] },
-    { label: 'Features', icon: 'pi pi-briefcase' },
-    { label: 'Contact', icon: 'pi pi-envelope' }
+    { label: 'Features', icon: 'pi pi-briefcase',routerLink:['/features'] },
+    { label: 'Contact', icon: 'pi pi-envelope',routerLink:['/contact'] }
   ];
 
 
