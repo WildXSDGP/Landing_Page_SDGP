@@ -3,13 +3,13 @@ import { RouterOutlet } from '@angular/router';
 
 import { Navbar } from './navbar/navbar';
 import { HeroSection } from './hero-section/hero-section';
-import { Features } from './features/features';
+import { Features } from './features/features'
 import { PageNotFound } from './page-not-found/page-not-found';
 import { TeamPage } from './team-page/team-page';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Navbar,HeroSection,Features,PageNotFound,TeamPage],
+  imports: [RouterOutlet,Navbar,HeroSection,PageNotFound,TeamPage,Features],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
