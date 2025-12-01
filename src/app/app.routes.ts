@@ -2,9 +2,10 @@ import { Routes } from '@angular/router';
 import { App } from './app';
 import { TeamPage } from './team-page/team-page';
 import { PageNotFound } from './page-not-found/page-not-found';
+import { Landing } from './pages/landing/landing';
 
 export const routes: Routes = [
-    {path:'',component:App},
+    {path:'',component:Landing},
     {path:'home',redirectTo:'',pathMatch:'full'},
 
     {
