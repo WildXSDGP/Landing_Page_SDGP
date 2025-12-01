@@ -5,7 +5,7 @@ import { PageNotFound } from './page-not-found/page-not-found';
 
 export const routes: Routes = [
     {path:'',component:App},
-    {path:'Home',redirectTo:'',pathMatch:'full'},
+    {path:'home',redirectTo:'',pathMatch:'full'},
 
     {
     path: 'about',
