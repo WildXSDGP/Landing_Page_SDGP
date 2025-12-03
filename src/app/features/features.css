@@ -6,42 +6,77 @@
 }
 
 .features-section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   background: var(--surface-ground);
   text-align: center;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.features-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, #10b98122, transparent 40%),
+              radial-gradient(circle at 80% 80%, #0ea5e922, transparent 40%);
+  opacity: 0.35;
+  pointer-events: none;
 }
 
 .section-title {
   font-size: 2.2rem;
   margin-bottom: 30px;
-  font-weight: bold;
-  color: #1e293b;
+  font-weight: 700;
+  color: #064e3b;
 }
 
 .feature-card {
-  padding: 20px;
-  min-height: 200px;
+  padding: 25px;
+  min-height: 240px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border-radius: 12px;
-  transition: 0.3s;
-  background: var(--surface-card);
+  align-items: center;
+  text-align: center;
+  
+  transition: 0.4s ease;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   height: 220px; 
-  border: 2px solid var(--surface-border);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  align-items: stretch;
+  gap: 28px;
+  padding: 0 20px;
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(16,185,129,0.3);
+  border-color:#10b981aa ;
+}
+
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  font-size: 2rem;
+
+  box-shadow: 0 8px 20px rgba(5, 150, 105, 0.4);
+  margin-bottom: 15px;
 }
 
 
@@ -52,24 +87,28 @@
 
 
 .feature-title {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-top: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #064e3b;
+  margin-bottom: 8px;
 }
 
 .feature-description {
-  color: #334155;
+   color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .features-grid {
-    grid-template-columns: repeat(2, 1fr);  /* 2 cards for tablets */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .features-grid {
-    grid-template-columns: 1fr;  /* 1 card for mobile */
+    grid-template-columns: 1fr;
   }
 }
 
