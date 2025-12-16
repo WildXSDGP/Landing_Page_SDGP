@@ -16,7 +16,7 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "outputPath": "dist/Landing_Page",
-            "baseHref": "/Landing_Page_SDGP/",
+            
             "assets": [
               {
                 "glob": "**/*",
