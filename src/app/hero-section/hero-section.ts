@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hero-section',
@@ -9,6 +10,12 @@ import { ButtonModule } from 'primeng/button';
   styleUrl: './hero-section.css',
 })
 export class HeroSection {
+
+  private router=inject(Router);
+
+  navigateTo(route:String):void{
+    this.router.navigate([route]);
+  }
   
 
 }

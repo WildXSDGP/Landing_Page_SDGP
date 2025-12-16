@@ -21,5 +21,7 @@ export const routes: Routes = [
   { path: 'map', component: PageNotFound },
   { path: 'features', component: Features },
   { path: 'about-us', component: TeamPage},
+  {path: 'team',component:TeamPage},
   { path: '**', component: PageNotFound},
+ 
 ];
