@@ -22,6 +22,7 @@ export class Navbar implements OnInit{
                     },
                     {
                         label: 'WildX',
+                        
                         routerLink:['/about/wildx']
                     }
                 ] },

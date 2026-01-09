@@ -1,1 +1,15 @@
-<p>team-page works!</p>
+<div class="team-section">
+  <h1>Meet the WildX Team</h1>
+  <p class="subtitle">The minds behind the Wildlife Safari Platform</p>
+
+  <div class="team-grid">
+    <p-card *ngFor="let member of team" class="team-card">
+      <img [src]="member.img" class="profile-img" />
+
+      <h3>{{ member.name }}</h3>
+      <p class="role">{{ member.role }}</p>
+
+      <button pButton label="Profile" icon="pi pi-user" class="p-button-outlined"></button>
+    </p-card>
+  </div>
+</div>
