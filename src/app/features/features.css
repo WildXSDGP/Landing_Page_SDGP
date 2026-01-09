@@ -18,8 +18,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 20% 20%, #10b98122, transparent 40%),
-              radial-gradient(circle at 80% 80%, #0ea5e922, transparent 40%);
+  
+  background: linear-gradient(135deg, #ecfeff, #d1fae5);
   opacity: 0.35;
   pointer-events: none;
 }
