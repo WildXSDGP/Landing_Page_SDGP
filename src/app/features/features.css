@@ -7,7 +7,7 @@
 
 .features-section {
   padding: 80px 20px;
-  background: var(--surface-ground);
+  background: linear-gradient(135deg, #ecfeff, #d1fae5);
   text-align: center;
   width: 100%;
   position: relative;
