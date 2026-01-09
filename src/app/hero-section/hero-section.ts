@@ -16,6 +16,10 @@ export class HeroSection {
   navigateTo(route:String):void{
     this.router.navigate([route]);
   }
+
+  openExternal(url:String){
+    window.open('url', '_blank');
+  }
   
 
 }
