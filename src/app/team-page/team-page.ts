@@ -15,9 +15,9 @@ export class TeamPage {
     { name: 'S. Ransika', role: 'Project Manager', img: 'team/member1.jpeg' },
     { name: 'T. Muthukumarana', role: 'Frontend Developer', img: 'team/member2.jpeg' },
     { name: 'B. Malshan', role: 'Backend Engineer', img: 'team/member3.jpg' },
-    { name: 'D. Wanniarachchi', role: 'UI/UX Designer', img: 'assets/team/4.jpg' },
+    { name: 'D. Wanniarachchi', role: 'UI/UX Designer', img: 'team/member4.jpeg' },
     { name: 'M. Ranaweera', role: 'AI Specialist', img: 'team/member5.jpg' },
-    { name: 'N. Lokuge', role: 'Data Analyst', img: 'assets/team/6.jpg' }
+    { name: 'M. Lokuge', role: 'Data Analyst', img: 'team/member6.jpg' }
   ];
 
 }

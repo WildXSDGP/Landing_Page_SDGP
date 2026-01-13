@@ -22,7 +22,7 @@ export class Contact {
     { name: 'B. Malshan', role: 'Backend Engineer', phone: '+94 75 345 6789' },
     { name: 'D. Wanniarachchi', role: 'UI/UX Designer', phone: '+94 78 456 7890' },
     { name: 'M.Ranaweera', role: 'AI Specialist', phone: '+94 72 567 8901' },
-    { name: 'N. Lokuge', role: 'Data Analyst', phone: '+94 76 678 9012' }
+    { name: 'M. Lokuge', role: 'Data Analyst', phone: '+94 76 678 9012' }
   ];
 
   openGitHub() {
