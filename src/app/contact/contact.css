@@ -1,0 +1,22 @@
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #ecfeff, #d1fae5);
+}
+
+.subtitle {
+  color: #065f46;
+  margin-bottom: 40px;
+}
+
+.wildx-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}

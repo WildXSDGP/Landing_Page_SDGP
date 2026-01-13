@@ -1,1 +1,33 @@
-<p>contact works!</p>
+<div class="contact-section">
+  <h1>Contact WildX</h1>
+  <p class="subtitle">Get in touch with the Wildlife Safari Team</p>
+
+  <!-- WildX Info -->
+  <div class="wildx-info">
+    <p-card>
+      <h3>WildX Official</h3>
+      <p>Email: <strong>{{ wildx.email }}</strong></p>
+
+      <button pButton label="Send Email" icon="pi pi-envelope" (click)="sendMail()"></button>
+
+      <button
+        pButton
+        label="GitHub Organization"
+        icon=" pi-github"
+        class="p-button-outlined"
+        (click)="openGitHub()">
+      </button>
+    </p-card>
+  </div>
+
+  <!-- Team Contacts -->
+  <h2>Team Members</h2>
+  <div class="team-grid">
+    <p-card *ngFor="let member of teamContacts">
+      <h4>{{ member.name }}</h4>
+      <p>{{ member.role }}</p>
+      <p> {{ member.phone }}</p>
+    </p-card>
+  </div>
+</div>
+

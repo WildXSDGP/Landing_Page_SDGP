@@ -12,12 +12,12 @@ import { CardModule } from 'primeng/card';
 export class TeamPage {
 
   team = [
-    { name: 'B. Malshan', role: 'Project Manager', img: 'team/member1.jpg' },
-    { name: 'N. Silva', role: 'Frontend Developer', img: 'assets/team/2.jpg' },
-    { name: 'M. Fernando', role: 'Backend Engineer', img: 'assets/team/3.jpg' },
-    { name: 'S. Jayasinghe', role: 'UI/UX Designer', img: 'assets/team/4.jpg' },
-    { name: 'R. Wickramasinghe', role: 'AI Specialist', img: 'assets/team/5.jpg' },
-    { name: 'K. Gunawardena', role: 'Data Analyst', img: 'assets/team/6.jpg' }
+    { name: 'S. Ransika', role: 'Project Manager', img: 'team/member1.jpg' },
+    { name: 'T. Muthukumarana', role: 'Frontend Developer', img: 'assets/team/2.jpg' },
+    { name: 'B. Malshan', role: 'Backend Engineer', img: 'team/member3.jpg' },
+    { name: 'D. Wanniarachchi', role: 'UI/UX Designer', img: 'assets/team/4.jpg' },
+    { name: 'M. Ranaweera', role: 'AI Specialist', img: 'team/member5.jpg' },
+    { name: 'N. Lokuge', role: 'Data Analyst', img: 'assets/team/6.jpg' }
   ];
 
 }
