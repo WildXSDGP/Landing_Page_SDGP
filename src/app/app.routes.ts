@@ -4,6 +4,7 @@ import { TeamPage } from './team-page/team-page';
 import { PageNotFound } from './page-not-found/page-not-found';
 import { Landing } from './pages/landing/landing';
 import { Features } from './features/features';
+import { Contact } from './contact/contact';
 
 export const routes: Routes = [
     {path:'',component:Landing},
@@ -22,6 +23,7 @@ export const routes: Routes = [
   { path: 'features', component: Features },
   { path: 'about-us', component: TeamPage},
   {path: 'team',component:TeamPage},
+  {path: 'contact',component:Contact},
   { path: '**', component: PageNotFound},
  
 ];
