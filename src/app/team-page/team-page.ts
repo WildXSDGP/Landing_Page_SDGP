@@ -12,8 +12,8 @@ import { CardModule } from 'primeng/card';
 export class TeamPage {
 
   team = [
-    { name: 'S. Ransika', role: 'Project Manager', img: 'team/member1.jpg' },
-    { name: 'T. Muthukumarana', role: 'Frontend Developer', img: 'assets/team/2.jpg' },
+    { name: 'S. Ransika', role: 'Project Manager', img: 'team/member1.jpeg' },
+    { name: 'T. Muthukumarana', role: 'Frontend Developer', img: 'team/member2.jpeg' },
     { name: 'B. Malshan', role: 'Backend Engineer', img: 'team/member3.jpg' },
     { name: 'D. Wanniarachchi', role: 'UI/UX Designer', img: 'assets/team/4.jpg' },
     { name: 'M. Ranaweera', role: 'AI Specialist', img: 'team/member5.jpg' },
